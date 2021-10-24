@@ -8,6 +8,10 @@ const Button = () =>{
 
     const [isClicked,setIsClicked] = useState('1rem');
     const [isDBClicked,setIsDBClicked] = useState('10rem');
+    const text="Thanks for wasting your time";
+
+    
+
     const clickHandler = (event) =>{
         console.log(event);
         let newC = isClicked.replace(/\D/g, "");
@@ -45,6 +49,7 @@ const Button = () =>{
             > 
                 DoubleClick {isDBClicked}
             </button>
+            <h2 style={{color:'white'}}>{isDBClicked===isClicked && text}</h2>
         </div>
  
         
